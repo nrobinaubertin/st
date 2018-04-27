@@ -92,7 +92,7 @@ static const char *colorname[] = {
 	"#98971A", // green
 	"#D79921", // yellow
 	"#458588", // blue
-	"#B16286", // magenta
+	"#B16286", // purple
 	"#689D6A", // aqua
 	"#A89984", // gray
 
@@ -102,7 +102,7 @@ static const char *colorname[] = {
 	"#B8BB26", // bold_green
 	"#FABD2F", // bold_yellow
 	"#83A598", // bold_blue
-	"#D3869B", // bold_magenta
+	"#D3869B", // bold_purple
 	"#8EC07C", // bold_aqua
 	"#EBDBB2", // fg
 };
@@ -112,24 +112,24 @@ static const char *altcolorname[] = {
     // GRUVBOX LIGHT
 
 	/* 8 normal colors */
-	"#282828", // bg
+	"#FBF1C7", // bg
 	"#CC241D", // red
 	"#98971A", // green
 	"#D79921", // yellow
 	"#458588", // blue
-	"#B16286", // magenta
+	"#B16286", // purple
 	"#689D6A", // aqua
-	"#A89984", // gray
+	"#7C6F64", // gray
 
 	/* 8 bright colors */
 	"#928374", // bold_grey
-	"#FB4934", // bold_red
-	"#B8BB26", // bold_green
-	"#FABD2F", // bold_yellow
-	"#83A598", // bold_blue
-	"#D3869B", // bold_magenta
-	"#8EC07C", // bold_aqua
-	"#EBDBB2", // fg
+	"#9D0006", // bold_red
+	"#79740E", // bold_green
+	"#B57614", // bold_yellow
+	"#076678", // bold_blue
+	"#8F3F71", // bold_purple
+	"#427B58", // bold_aqua
+	"#3C3836", // fg
 };
 
 
