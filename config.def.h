@@ -84,31 +84,52 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+    // GRUVBOX DARK
+
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#282828", // bg
+	"#CC241D", // red
+	"#98971A", // green
+	"#D79921", // yellow
+	"#458588", // blue
+	"#B16286", // magenta
+	"#689D6A", // aqua
+	"#A89984", // gray
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#928374", // bold_grey
+	"#FB4934", // bold_red
+	"#B8BB26", // bold_green
+	"#FABD2F", // bold_yellow
+	"#83A598", // bold_blue
+	"#D3869B", // bold_magenta
+	"#8EC07C", // bold_aqua
+	"#EBDBB2", // fg
+};
 
-	[255] = 0,
+/* Terminal colors for alternate (light) palette */
+static const char *altcolorname[] = {
+    // GRUVBOX LIGHT
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	/* 8 normal colors */
+	"#282828", // bg
+	"#CC241D", // red
+	"#98971A", // green
+	"#D79921", // yellow
+	"#458588", // blue
+	"#B16286", // magenta
+	"#689D6A", // aqua
+	"#A89984", // gray
+
+	/* 8 bright colors */
+	"#928374", // bold_grey
+	"#FB4934", // bold_red
+	"#B8BB26", // bold_green
+	"#FABD2F", // bold_yellow
+	"#83A598", // bold_blue
+	"#D3869B", // bold_magenta
+	"#8EC07C", // bold_aqua
+	"#EBDBB2", // fg
 };
 
 
@@ -118,8 +139,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
@@ -178,6 +199,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
+	{ XK_ANY_MOD,           XK_F6,          swapcolors,     {.i =  0} },
 };
 
 /*
