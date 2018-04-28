@@ -63,7 +63,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "xterm-256color";
 
 /*
  * spaces per tab
@@ -105,6 +105,8 @@ static const char *colorname[] = {
 	"#D3869B", // bold_purple
 	"#8EC07C", // bold_aqua
 	"#EBDBB2", // fg
+
+	[255] = 0,
 };
 
 /* Terminal colors for alternate (light) palette */
@@ -130,6 +132,8 @@ static const char *altcolorname[] = {
 	"#8F3F71", // bold_purple
 	"#427B58", // bold_aqua
 	"#3C3836", // fg
+
+	[255] = 0,
 };
 
 
@@ -139,8 +143,8 @@ static const char *altcolorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 8;
-static unsigned int defaultrcs = 15;
+static unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 8;
 
 /*
  * Default shape of cursor
