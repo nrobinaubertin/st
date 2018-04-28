@@ -139,7 +139,7 @@ static const char *altcolorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 14;
+static unsigned int defaultcs = 8;
 static unsigned int defaultrcs = 15;
 
 /*
