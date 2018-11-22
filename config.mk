@@ -19,6 +19,9 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \
        `pkg-config --libs freetype2`
 
 # flags
-CPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
-STCFLAGS = $(INCS) $(CPPFLAGS) $(CFLAGS)
-STLDFLAGS = $(LIBS) $(LDFLAGS)
+CPPFLAGS = -D_DEFAULT_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\"
+CFLAGS   = -std=c11 -pedantic -Wall -Wno-unused-result -Wno-deprecated-declarations -Oz ${INCS} ${CPPFLAGS}
+LDFLAGS  = ${LIBS}
+
+# compiler and linker
+CC = clang
