@@ -22,7 +22,3 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \
 CPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
 STCFLAGS = $(INCS) $(CPPFLAGS) $(CFLAGS)
 STLDFLAGS = $(LIBS) $(LDFLAGS)
-
-# compiler and linker
-# CC = c99
-
